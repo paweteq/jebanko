@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1 style='text-align: center'>Tablica funkcji trygnomrtycznych</h1>")
+        document.write("<table><tr><th>&alpha;</th><th>sin&alpha;</th><th>cos&alpha;</th><th>tg&alpha;</th><th>ctg&alpha;</th></tr>")
+        document.write("<tr><td>0&deg;</td><td>0.0000</td><td>1.0000</td><td>0.0000</td><td>nie istnieje</td></tr>")
+            for(let i=1;i<=89;i++){
+                let radiany=(i*Math.PI)/180;
+                let sinusik=Math.sin(radiany);
+                let cosinusik=Math.cos(radiany)
+                let tangensik=sinusik/cosinusik
+                let cotangensik=cosinusik/sinusik
+                document.write("<tr><td>"+i+"&deg;</td><td>"+sinusik.toFixed(4)+"</td><td>"+cosinusik.toFixed(4)+"</td><td>"+tangensik.toFixed(4)+"</td><td>"+cotangensik.toFixed(4)+"</td></tr>")
+                }
+                document.write("<tr><td>90&deg;</td><td>1.0000</td><td>0.0000</td><td>nie istnieje</td><td>0.0000</td></tr>")
+               
+
+        document.write("</table>")
+    </script>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        th{
+            width: 80px;
+            text-align: center;
+            color: black;
+            border: 2px double rgb(75, 75, 75);
+            background-color: #ABCDEF;
+        }
+        td{
+            width: 80px;
+            text-align: center;
+            color: black;
+            border: 2px double rgb(75, 75, 75);
+            background-color: #ABCDEF; 
+        }
+    </style>
+    <a class="powrot" href="index2.html">Wróć na stronę główną</a>
+</body>
+</html>

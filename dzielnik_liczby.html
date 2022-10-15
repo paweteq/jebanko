@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //dla liczby nauralnej n wypisz wszytskie jej dzielniki
+        let n=parseInt(prompt("Podaj liczbe naturalną"));
+        document.write("<h1>Dzielniki liczby: "+n+"</h1>")
+        for(let i=1;i<=n;i++){
+            if(n%i==0){
+                if(i%2==0) document.write("<h1 style='color:red;'>"+i+"</h1>");
+                else document.write("<h1 style='color:green'>"+i+"</h1>");
+            }
+        }
+    </script>
+    <a class="powrot" href="index2.html">Wróć na stronę główną</a>
+</body>
+</html>
