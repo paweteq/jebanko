@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        let mojadata=new Date()
+        if(mojadata.getHours()>=0 && mojadata.getHours()<6){
+            document.write("<h1>Rano</h1>")
+            document.write("Jest godzina: "+mojadata.getHours()+":"+mojadata.getMinutes()+"")
+            document.write("<img src='https://asiaprosto.pl/wp-content/uploads/2020/09/sunrise-1634734_1280-945x630.jpg'>")
+        }
+        else if(mojadata.getHours()>=6 && mojadata.getHours()<12){
+            document.write("<h1>Przed południem</h1>")
+            document.write("Jest godzina: "+mojadata.getHours()+":"+mojadata.getMinutes()+"")
+            document.write("<img src='https://i.ytimg.com/vi/wcGfJ2-XDE8/maxresdefault.jpg'>")
+        }
+        else if(mojadata.getHours()>=12 && mojadata.getHours()<18){
+            document.write("<h1>Po Południu</h1>")
+            document.write("Jest godzina: "+mojadata.getHours()+":"+mojadata.getMinutes()+"")
+            document.write("<img src='https://img.redro.pl/obrazy/wieczorem-symetria-ladnego-czerwonego-nieba-nad-stadionem-przed-jeziorem-700-151831880.jpg'>")
+        }
+        else if(mojadata.getHours()>=18 && mojadata.getHours()<=24){
+            document.write("<h1>Wieczór</h1>")
+            document.write("Jest godzina: "+mojadata.getHours()+":"+mojadata.getMinutes()+"")
+            document.write("<img src='https://static.wikia.nocookie.net/jestem-franky/images/7/72/Noc.jpeg/revision/latest?cb=20200531121003&path-prefix=pl'>")
+        }
+    </Script>
+    <a class="powrot" href="index2.html">Wróć na stronę główną</a>
+</body>
+</html>

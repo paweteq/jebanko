@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // kluczowe zadanie na spr
+        let n=parseInt(prompt("Podaj ilość towarów:"));
+        let suma=0;
+        let srednia=0;
+        let max=0;
+        let min=Number.MAX_VALUE;
+        let cos=0
+        
+        for(let i=1;i<=n;i++){
+            let kwota=parseFloat(prompt("Podaj kwotę za "+i+" towar:"));
+            suma=suma+kwota
+            srednia=suma/n
+            if(kwota>max) max=kwota;
+            if(kwota<min) min=kwota;
+            if(100<kwota) cos++;
+            document.write("<h2>Kwota za "+i+" towar to: "+kwota+" zł</h2>");           
+        }
+        document.write("<h2>Kwota łączna: "+suma+"zł</h2>");
+        document.write("<h2>Kwota srednia: "+srednia+"zł</h2>"); 
+        document.write("<h2>Kwota najwyższa: "+max.toFixed(2)+"</h2>");
+        document.write("<h2>Kwota najmniejsza: "+min.toFixed(2)+"</h2>");
+        document.write("<h2>Ilość kwot większysz od stu: "+cos+"</h2>");
+    </script>
+    <a class="powrot" href="index2.html">Wróć na stronę główną</a>
+</body>
+</html>
